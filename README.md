@@ -21,6 +21,18 @@ With `FILE.GB OUTFILE.GB`, a valid header in `FILE.GB` will cause a new `OUTFILE
 
 In this program, "valid" means the logo data has crc32 0x46195417 - this is probably not how actual BIOS verifies it, but there does exist logo data with this crc32 that is also allowed by several actual BIOS revisions. 
 
+Example error traceback when the logo data does not have the expected crc32:
+```
+Traceback (most recent call last):
+  File "gbsum.py", line 105, in <module>
+    main(*sys.argv) # usage: python gbsum.py { -c -OR- -v } FILE.GB  -OR-  python gbsum.py FILE.GB OUTFILE.GB
+  File "gbsum.py", line 77, in main
+    EXPECTED_LOGO_CHECKSUM)) + '\n' + vlogo(cart[0x104:][:48])
+AssertionError: Zock2000VFame.0CFA.gb: logo checksum mismatch: computed D2B57657 vs. expected 46195417
+⣿⢆⢸⡇⣛⢀⡀⣀⠠⣶⠄⣀⣀⠀⣀⢀⡀⠀⣀⣸⡇⢀⣀⡀
+⣿⠈⢾⡇⣿⠸⣇⡿⠀⣿⠸⣇⣸⠇⢿⣸⠇⢿⣀⣸⠇⢿⣒⡛
+```
+## Logo display
 It can display the "logo" section of the header a few different ways, dependent on CHARSET/DEFAULT_CHARSET environment variables or the current locale setting.
 Example from a V.Fame cartridge I have:
 Unicode Braille patterns
