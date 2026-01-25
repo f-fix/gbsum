@@ -37,6 +37,7 @@ AssertionError: Zock2000VFame.0CFA.gb: logo checksum mismatch: computed D2B57657
 ## Logo display
 It can display the "logo" section of the header a few different ways, dependent on CHARSET/DEFAULT_CHARSET environment variables or the current locale setting.
 Example from a V.Fame cartridge I have:
+
 Unicode Braille patterns _(I apologize for the Braille abuse. Unicode lacks 2x4 mosaic patterns apart from Braille, even though some old PC's have those in their character sets - e.g. Kaypro 2x)_
 ```
 ⣿⢆⢸⡇⣛⢀⡀⣀⠠⣶⠄⣀⣀⠀⣀⢀⡀⠀⣀⣸⡇⢀⣀⡀
