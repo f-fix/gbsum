@@ -15,8 +15,8 @@ Luoke Ren DX6 (Unlicensed, Japanese) (CBA091) [C].gb: recorded checksum 4E:443C
 Luoke Ren DX6 (Unlicensed, Japanese) (CBA091) [C].gb: computed checksum 4E:443C
 ⣿⢆⢸⡇⣛⢀⡀⣀⠠⣶⠄⣀⣀⠀⣀⢀⡀⠀⣀⣸⡇⢀⣀⡀
 ```
-`✁┄┄┄┄ (bottom half omitted)`
-_(aside: the language designator "Japanese" for this particular cartridge is a little fictitious, but that's at least what the developers were aiming for the appearance of.)_
+`✁┄┄┄┄` _(bottom half omitted)_
+**aside:** the language designator "Japanese" for this particular cartridge is a little fictitious, but that's at least what the developers were aiming for the appearance of.)
 
 With `FILE.GB OUTFILE.GB`, a valid header in `FILE.GB` will cause a new `OUTFILE.GB` to be created (or overwritten!) containing a copy of `FILE.GB` with the checksum updated to reflect the contents.
 
