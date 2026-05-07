@@ -57,3 +57,6 @@ Block graphics (e.g. for CP437)
 ██ ▀▄██ ██ ██ ██  ██ ██  ██ ██ ██ ██   ██ ██▄▄██
 ██  ▀██ ██ ▀█▄█▀  ██ ▀█▄▄█▀ ▀█▄█▀ ▀█▄▄▄█▀ ▀█▄▄▄
 ```
+## BONUS: `gbextract.py`
+
+A tool is provided for extracting GB ROM-shaped blobs from inside larger files. See `gbextract.py` for details.
